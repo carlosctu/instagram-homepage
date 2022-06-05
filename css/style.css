@@ -82,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  height: 1946px;
+  height: 2246px;
   width: 100%;
   /* width: 935px; */
 }
@@ -97,11 +97,9 @@ body {
   width: 614px;
   height: 118px;
   background-color: #ffffff;
-  /* outline: 1px solid red; */
   border: 1px solid #dbdbdb;
-  /* border-right: 1px solid black; */
+  border-radius: 12px;
   position: relative;
-  /* z-index: 1; */
   /*Comando top, faz com que o sobrante do conteudo fique escondido*/
   overflow: hidden;
 }
@@ -324,10 +322,12 @@ body {
 }
 .post {
   flex-direction: column;
-  height: 749px;
+  height: 903px;
   width: 614px;
   margin: 24px 0 60px 218px;
+  background-color: #ffffff;
   border: 1px solid #dbdbdb;
+  border-radius: 12px;
 }
 .post-account {
   display: flex;
@@ -339,7 +339,7 @@ body {
   height: 32px;
   width: 32px;
   border-radius: 50%;
-  margin-left: 17px;
+  margin-left: 10px;
 }
 .post-account div {
   display: flex;
@@ -354,10 +354,16 @@ body {
   margin-right: 15px;
 }
 .post-account ion-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-top: 4px;
-  padding-right: 21px;
+  padding-right: 10px;
+}
+.post-account .verified{
+  width: 14px;
+  height: 14px;
+  margin: inherit;
+  margin: 0 0 2px 8px;
 }
 .post-line {
   border: 1px solid #efefef;
@@ -367,18 +373,14 @@ body {
   justify-content: center;
 }
 .post-picture img{
-  height: 612px;
-  width: 612px;
-}
-.post-picture video{
-  height: 612px;
+  height: 580px;
   width: 612px;
 }
 .post-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 42px;
+  height: 44px;
   width: 100%;
 }
 .l-k-s {
@@ -386,20 +388,30 @@ body {
   justify-content: space-between;
   width: 88.18px;
   height: 17.88px;
-  margin-left: 17.75px;
+  margin-left: 5px;
 }
 .l-k-s ion-icon,
 .save ion-icon {
-  height: 20px;
+  height: 22px;
   width: 30px;
 }
 .save {
   width: 12.38px;
   height: 17.88px;
-  margin-right: 19.62px;
+  margin-right: 19px;
 }
 .post-likes {
   display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  width: 100%;
+  /* height: 218px; */
+}
+.post-likes .verified{
+  width: 14px;
+  height: 14px;
+  margin: inherit;
+  margin: 0 0 2px 8px;
 }
 .post-likes strong {
   font-weight: 500;
@@ -408,15 +420,92 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin-left: 21.75px;
+  margin-left: 10px;
 }
 .post-likes div {
   display: flex;
   align-items: center;
-  height: 20px;
-  width: 577px;
-  margin-left: 5px;
+  /* width: 577px; */
+  font-size: 15px;
+  /* margin-left: 5px; */
 }
+.post-likes .likes-about{
+  margin-left: 10px;
+}
+.post-likes .post-caption{
+  display: flex;
+  width: 100%;
+  padding-left: 12px;
+  margin-top: 10px;
+}
+.post-caption span{
+  margin-left: 6.5px;
+}
+.post-likes .post-comments{
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 6px;
+  padding-left: 12px;
+  
+}
+.post-comments p{
+  font-size: 14.5px;
+  color: #8e8e8e;
+  margin: 8px 0;
+}
+.post-comments .more {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #8e8e8e;
+}
+.user-comment strong, .user-comment p{
+  margin: 4.5px 0;
+}
+.user-comment p{
+  color: inherit;
+  font-size: 14px;
+  margin-left: 4.5px;
+}
+.underlined:hover{
+  text-decoration: underline;
+}
+
+.post-people-comments div{
+  display: flex;
+  align-items: center;
+}
+.post-people-comments{
+  display: flex;
+  margin-top: 16px;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 51px;
+  width: 100%;
+  font-size: 15px;
+  background-color: #FAFAFA;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;  
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.post-people-comments ion-icon{
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+.post-people-comments p{
+  color: #8e8e8e;
+}
+.post-people-comments span{
+  font-weight: 500;
+  color: rgba(39, 196, 245, 0.5);
+}
+.post-people-comments span:hover{
+  color: #27c4f5;
+}
+
 .nav-bar a {
   text-decoration: none;
   color: black;
@@ -504,7 +593,7 @@ body {
   }
   .stories {
     border: inherit;
-    background-color: #e5e5e5;
+    background-color: #FAFAFA;
   }
   .posts {
     background-color: #e5e5e5;
