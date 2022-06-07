@@ -12,7 +12,7 @@
 
 ![image](https://user-images.githubusercontent.com/72350887/172273395-df67693b-739e-4051-a745-727564eb18cc.png)
 
-<p align="justify"> My second project at Driven Education Bootcamp. On this project we create an alternative responsive "instagram homepage" by only using HTML and CSS.</p>
+<p align="justify"> My second project at Driven Education Bootcamp. On this project we create an alternative responsive "instagram homepage" by only using HTML and CSS. This page has a different layout and design for Desktop, Tablet and Mobile, hope you like it (:</p>
 
 ## How to access
 
