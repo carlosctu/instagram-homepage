@@ -631,6 +631,9 @@ body {
     width: 103px;
     margin-top: 8px;
   }
+  .post{
+    height: 100%;
+  }   
   .nav-mobile ion-icon {
     height: 20px;
     width: 20px;
