@@ -604,6 +604,7 @@ body {
     margin: 0 0 60px 0;
   }
   .post-picture img{
+    height: 100%; /*Ultima alteracao mobile*/
     width: 100%;
   }
   .post-account{
